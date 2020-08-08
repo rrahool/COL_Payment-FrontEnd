@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page 9</title>
+    <title>Page 4</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -20,39 +20,24 @@
         }
         
         .transparent-box {
-            /* background-color: #fff; */
+            background-color: #fff;
             padding: 20px;
             border: 1px solid #fff;
             border-radius: 3px;
         }
         
-        h1 {
-            font-weight: 300;
+        .transparent-box-wide {
+            text-align: center;
         }
         
-        .lite-text {
-            font-weight: 300;
-        }
-        
-        p>.red-box {
-            width: 10px;
-            height: 11px;
-            background: #FF0000 0% 0% no-repeat padding-box;
+        .transparent-box-wide h5 {
+            color: #0056AC;
         }
         
         input[type=text] {
-            padding: 12px;
+            height: 20px;
             border: 1px solid #ccc;
-            border-radius: 3px;
-            box-shadow: 0px 6px 10px #00000029;
-        }
-        
-        .red-box {
-            width: 10px;
-            height: 11px;
-            background: #ff0000;
-            display: inline-block;
-            margin-right: 5px;
+            border-radius: 5px;
         }
         /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
         
@@ -108,75 +93,103 @@
             </nav>
 
             <div class="head-text">
-                <h1>EBill</h1>
+                <h1>Pay Your Bill Online</h1>
                 <div class="underline-bar"></div>
             </div>
 
-
-
             <div class="inner-box-container">
-                <div class="inner-box-normal">
-                    <div class="row transparent-container">
+                <div class="inner-box-colored">
+                    <div class="row">
                         <div class="col-md-6">
-                            <div class="transparent-box">
-                                <div class="row">
-                                    <div class="col-md-10">
-                                        <h1>Make our home greener with eBill</h1>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <p>
-                                            <b>Stay safe and view your bills without leaving your doorstep.</b>
-                                        </p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="red-box">
-                                            <p> </p>
-                                        </div>
-                                        <b>Timely notifications</b>
-                                        <p class="lite-text">Receive email/SMS alerts when your eBills are ready.</p>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="red-box">
-                                            <p> </p>
-                                        </div>
-                                        <b>Less paper filing</b>
-                                        <p class="lite-text">Receive PDF bills you can download and keep for your own records.</p>
-                                    </div>
-                                </div>
-                            </div>
+                            <ul class="list-group mb-1">
+                                <li class="list-group-item">Name:</li>
+                            </ul>
+                            <ul class="list-group">
+                                <li class="list-group-item">Bill No: <b>SI20070154467</b></li>
+                                <li class="list-group-item">Bill Date: <b>01-Jul-20</b></li>
+                                <li class="list-group-item">Period: <b>2020-07-01 To 2020-07-31</b></li>
+                                <li class="list-group-item">Last Date of Payment: <b>12-Jul-20</b></li>
+                            </ul>
                         </div>
 
-
                         <div class="col-md-6">
-                            <div class="transparent-box">
-                                <form class="small-form">
-                                    <div class="form-group">
-                                        <h2>Your e-mail account</h2>
-                                        <div class="form-input-container">
-                                            <div class="row">
-                                                <div class="col-md-12">
-                                                    <input type="text" id="email" name="email" placeholder="e-mail">
+                            <ul class="list-group mb-1">
+                                <li class="list-group-item">Monthly Bill: </li>
+                                <li class="list-group-item clearfix">
+                                    <div class="float-left">
+                                        Latest Bill Amount:
+                                    </div>
+                                    <div class="float-right">
+                                        <b>1900.00</b>
+                                    </div>
+                                </li>
+                                <li class="list-group-item clearfix">
+                                    <div class="float-left">
+                                        Due Amount:
+                                    </div>
+                                    <div class="float-right">
+                                        <b>4400.00</b>
+                                    </div>
+                                </li>
+                                <li class="list-group-item text-red">
+                                    <b>Your payable amount Tk. 6300.00</b>
+                                </li>
+                            </ul>
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <b>ENTER AMOUNT:</b>
+                                        </div>
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-4">
+                                            <input type="text" name="" id="">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-md-12">
+                            <div class="transparent-box-wide">
+                                <h5>
+                                    Longer Billing period can save your Money
+                                </h5>
+                                <ul class="list-group mb-1">
+                                    <li class="list-group-item">Name:</li>
+                                </ul>
+                                <ul class="list-group mb-1">
+                                    <li class="list-group-item">Name:</li>
+                                </ul>
+                                <div class="mt-4">
+                                    <h5>
+                                        Select your payment method
+                                    </h5>
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <ul class="list-group">
+                                                <div class="row">
+                                                    <div class="">
+                                                        <li class="list-group-item">
+                                                            <span class="badge badge-pill badge-secondary">Select</span>
+                                                        </li>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <img src="images/icons/BKash-bKash2-Logo.wine.png" alt="" width="100px" height="50px">
+                                                    </div>
                                                 </div>
-                                            </div>
+                                            </ul>
+
                                         </div>
-                                        <p>
-                                            By clicking on "Proceed" below you are agreeing to the <br>
-                                            <span class="text-red">Terms and Conditions, Payment Policy</span> and <span class="text-red">privacy policy.</span>
-                                        </p>
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-2"></div>
+                                        <div class="col-md-2"></div>
                                     </div>
-                                    <div class="form-btn">
-                                        <input type="submit" value="Submit" class="btn btn-rounded-sm btn-gray">
-                                    </div>
-                                </form>
+                                </div>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
