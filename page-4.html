@@ -7,14 +7,96 @@
     <title>Page 4</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" rel="stylesheet" type="text/css">
+
     <link rel="stylesheet" href="style.css">
+    <style>
+        .transparent-container {
+            display: -ms-flexbox;
+            /* IE10 */
+            display: flex;
+            -ms-flex-wrap: wrap;
+            /* IE10 */
+            flex-wrap: wrap;
+            margin: 0 -16px;
+        }
+        /* .transparent-box {
+            background-color: #fff;
+            padding: 20px;
+            border: 1px solid #fff;
+            border-radius: 3px;
+        } */
+        
+        .transparent-box-short,
+        .list-group-item {
+            box-shadow: 0px 3px 6px #00000029;
+        }
+        
+        .transparent-box-wide {
+            text-align: center;
+            height: auto;
+            background-color: #fff;
+            box-shadow: 0px 3px 6px #00000029;
+            border-radius: 2px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .transparent-box-wide h5 {
+            color: #0056AC;
+        }
+        
+        input[type=text] {
+            height: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        .t1_tag,
+        .t2_tag {
+            display: inline-block;
+            width: 60px;
+            padding: .001rem;
+            text-align: center;
+            background: #928a89;
+            color: #fff;
+            margin: 2px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        
+        .t1_tag_selected,
+        .t2_tag_selected {
+            background: #e01f1f;
+        }
+        /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+        
+        @media screen and (max-width: 988px) {
+            .transparent-box {
+                margin-bottom: 20px;
+            }
+            .transparent-box-short {
+                margin-top: 20px;
+            }
+            .inner-box-normal {
+                height: auto;
+                padding: 0;
+            }
+            .btn-rounded-sm {
+                width: 100%;
+                /* margin-right: 0px; */
+            }
+        }
+    </style>
 </head>
 
 <body>
     <div class="external-container">
         <div class="container-fluid">
             <div class="image-container">
-                <img src="images/top_banner-3.png" alt="">
+                <img src="images/top_banner.png" alt="">
             </div>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <a class="navbar-brand" href="#"></a>
@@ -52,62 +134,212 @@
 
             <div class="inner-box-container">
                 <div class="inner-box-colored">
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div class="table-box-with-border">
+                    <form action="">
+                        <div class="row">
 
-                                <!-- <form>
-                                    <div class="form-group">
-                                        <h2 class="text-red">Wrong Customer ID</h2>
-                                        <hr>
-                                        <h2>Please insert a valid customer id Forget Customer ID?</h2>
-                                        <button type="submit" class="btn btn-rounded-lg btn-cyan">Get a call back.</button>
-                                    </div>
+                            <div class="col-md-6">
+                                <div class="transparent-box-short">
+                                    <ul class="list-group mb-1">
+                                        <li class="list-group-item">Name:</li>
+                                    </ul>
+                                    <ul class="list-group">
+                                        <li class="list-group-item">Bill No: <b>SI20070154467</b></li>
+                                        <li class="list-group-item">Bill Date: <b>01-Jul-20</b></li>
+                                        <li class="list-group-item">Period: <b>2020-07-01 To 2020-07-31</b></li>
+                                        <li class="list-group-item">Last Date of Payment: <b>12-Jul-20</b></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="transparent-box-short">
+                                    <ul class="list-group mb-1">
+                                        <li class="list-group-item">Monthly Bill: </li>
+                                        <li class="list-group-item clearfix">
+                                            <div class="float-left">
+                                                Latest Bill Amount:
+                                            </div>
+                                            <div class="float-right">
+                                                <b>1900.00</b>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item clearfix">
+                                            <div class="float-left">
+                                                Due Amount:
+                                            </div>
+                                            <div class="float-right">
+                                                <b>4400.00</b>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item text-red">
+                                            <b>Your payable amount Tk. 6300.00</b>
+                                        </li>
+                                    </ul>
+                                    <ul class="list-group">
+                                        <li class="list-group-item">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <b>ENTER AMOUNT:</b>
+                                                </div>
+                                                <div class="col-md-2"></div>
+                                                <div class="col-md-4">
+                                                    <input type="text" name="" id="">
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
 
-                                    <hr>
-
-                                    <button type="submit" class="btn btn-rounded btn-gray">Retry</button>
-                                </form> -->
                             </div>
                         </div>
-                        <div class="col-sm-6">
-                            <div class="table-box-with-border">
+                        <div class="row mt-3">
+                            <div class="col-md-12">
+                                <div class="transparent-box-wide">
+                                    <h5>
+                                        Longer Billing period can save your Money
+                                    </h5>
+                                    <ul class="list-group mb-1">
+                                        <li class="list-group-item">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <b>Pay for 5 Months and get 1 month Free Internet</b>
+                                                </div>
+                                                <!-- <div class="col-md-1"></div> -->
+                                                <div class="col-md-5">(Monthly Bill) 2500.00 X 5 = 12500.00 (Total Payable)</div>
+                                                <div class="col-md-1">
+                                                    <span class="bill_select"></span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <ul class="list-group mb-1">
+                                        <li class="list-group-item">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <b>Pay for 10 Months and get 2 months Free Internet</b>
+                                                </div>
+                                                <!-- <div class="col-md-1"></div> -->
+                                                <div class="col-md-5">(Monthly Bill) 2500.00 X 10 = 25000.00 (Total Payable)</div>
+                                                <div class="col-md-1">
+                                                    <span class="bill_select"></span>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
 
-                                <!-- <form>
-                                    <div class="form-group">
-                                        <h2 class="text-red">Wrong Customer ID</h2>
-                                        <hr>
-                                        <h2>Please insert a valid customer id Forget Customer ID?</h2>
-                                        <button type="submit" class="btn btn-rounded-lg btn-cyan">Get a call back.</button>
+
+                                    <div class="mt-4">
+                                        <h5>
+                                            Select your payment method
+                                        </h5>
+                                        <div class="row">
+                                            <div class="col-md-2">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <span class="payment_select"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mt-2">
+                                                            <div class="col-md-12">
+                                                                <img src="images/icons/bKash_icon.png" alt="" width="80px" height="50px">
+                                                            </div>
+
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <span class="payment_select"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mt-2">
+                                                            <div class="col-md-12">
+                                                                <img src="images/icons/nagad_icon.png" alt="" width="80px" height="50px">
+                                                            </div>
+
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <span class="payment_select"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mt-2">
+                                                            <div class="col-md-12">
+                                                                <img src="images/icons/ipay_icon.png" alt="" width="80px" height="50px">
+                                                            </div>
+
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <span class="payment_select"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mt-2">
+                                                            <div class="col-md-12">
+                                                                <img src="images/icons/rocket_icon.png" alt="" width="80px" height="50px">
+                                                            </div>
+
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item">
+                                                        <div class="row">
+                                                            <div class="col-md-12">
+                                                                <span class="payment_select"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row mt-2">
+                                                            <div class="col-md-12">
+                                                                <div class="row">
+                                                                    <div class="col-md-4">
+                                                                        <img src="images/icons/visa_icon.png" alt="" width="50px" height="50px">
+                                                                    </div>
+                                                                    <div class="col-md-4">
+                                                                        <img src="images/icons/mastercard_icon.png" alt="" width="50px" height="50px">
+                                                                    </div>
+                                                                    <div class="col-md-4">
+                                                                        <img src="images/icons/amex_icon.png" alt="" width="50px" height="50px">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="mt-5">
+                                            <button type="submit" class="btn btn-rounded-white btn-gray-dark">Pay Now</button>
+                                            <p class="mt-4">
+                                                By clicking on "Proceed" below you are agreeing to the <br>
+                                                <span class="text-red">Terms and Conditions, Payment Policy</span> and <span class="text-red">privacy policy.</span>
+                                            </p>
+                                        </div>
                                     </div>
-
-                                    <hr>
-
-                                    <button type="submit" class="btn btn-rounded btn-gray">Retry</button>
-                                </form> -->
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <br>
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <div class="box-area-with-border-lg">
-
-                                <!-- <form>
-                                    <div class="form-group">
-                                        <h2 class="text-red">Wrong Customer ID</h2>
-                                        <hr>
-                                        <h2>Please insert a valid customer id Forget Customer ID?</h2>
-                                        <button type="submit" class="btn btn-rounded-lg btn-cyan">Get a call back.</button>
-                                    </div>
-
-                                    <hr>
-
-                                    <button type="submit" class="btn btn-rounded btn-gray">Retry</button>
-                                </form> -->
-                            </div>
-                        </div>
-                    </div>
+                    </form>
                 </div>
             </div>
 
@@ -115,7 +347,6 @@
                 <div class="outer-content">
                     <div class="bill-queries">
                         <p>For Bill related queries, please contact: 01847200197, 01847200198 Or E-mail: billing@colbd.com <br> For transaction queries, please contact: 09612225222</p>
-
                     </div>
                     <div class="payment-image">
                         <img src="images/payment.png" alt="">
@@ -144,9 +375,46 @@
 
 
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script type="application/javascript" src="tag_selector.js"></script>
+
+    <script type="application/javascript">
+        $().ready(function() {
+            $('.bill_select').tag_selector({
+                class_prefix: 't1',
+                data: [{
+                    label: 'Select',
+                    value: 1
+                }],
+                callback: function(event_name, elem, parent) {
+                    check_value();
+                }
+            });
+        });
+    </script>
+
+    <script type="application/javascript">
+        $().ready(function() {
+
+            $('.payment_select').tag_selector({
+                class_prefix: 't2',
+                data: [{
+                    label: 'Select',
+                    value: 1
+                }],
+                callback: function(event_name, elem, parent) {
+                    check_value();
+                }
+            });
+        });
+    </script>
+
+
+
 </body>
 
 </html>

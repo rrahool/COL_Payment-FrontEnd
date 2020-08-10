@@ -65,7 +65,7 @@ body {
     font-weight: bolder;
     text-align: center;
     text-transform: uppercase;
-    padding: 50px 0;
+    padding: 20px 0;
 }
 
 .head-text-normal h1 {
@@ -339,6 +339,14 @@ form input[text] {
     font-size: 24px;
 }
 
+.btn-rounded-white {
+    width: 180px;
+    height: 50px;
+    color: #fff;
+    border-radius: 26px;
+    font-size: 24px;
+}
+
 .btn-rounded-lg {
     width: 293px;
     height: 53px;
@@ -349,6 +357,10 @@ form input[text] {
 
 .btn-gray {
     background-color: #DFDFDF;
+}
+
+.btn-gray-dark {
+    background-color: #929292;
 }
 
 .btn-cyan {
@@ -373,10 +385,9 @@ form input[text] {
     color: #2DB6FE;
 }
 
-
-/* .text-dark-cyan {
+.text-dark-cyan {
     color: #0099FF;
-} */
+}
 
 .text-blue-cyan {
     color: #0056AC;
